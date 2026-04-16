@@ -269,107 +269,70 @@ const HomePage = () => {
       <br></br>
       <br></br>
 
-      <div
-        style={{ backgroundColor: "#F0F6FF", cursor: "pointer", padding: "3%" }}
-      >
-        <div style={{ marginLeft: "5%", height: "100%", marginBottom: "2%" }}>
-          <Carousel
-            style={{ marginLeft: "5%", height: "100%", marginBottom: "2%" }}
-          />
-        </div>
+      <div className="home-carousel-container">
+        <Carousel />
       </div>
-      <div>
-        <img style={{ float: "left" }} src={left} alt="left-bg" />
-        <p
-          style={{
-            position: "absolute",
-            marginTop: "8%",
-            fontSize: "36px",
-            marginLeft: "12%",
-            color: "#253858",
-          }}
-        >
-          What makes <br></br>
-          <b> Policybazaar</b> the<br></br>
-          <b> best place</b> to buy<br></br>
-          <b> insurance</b> in India?
-        </p>
-        <img style={{ float: "right" }} src={right} alt="left-bg" />
-
-        <div className="home-d1">
-          <div className="home-l" style={{ backgroundColor: "#0550C7" }}></div>
-          <img src={part} alt="party" />
-          <p>
-            <b
-              style={{
-                color: "#0550C7",
-                position: "absolute",
-                marginBottom: "13px",
-              }}
-            >
-              Over 9 million
-            </b>
-          </p>
-          <p className="home-d-text">
-            Customers trust us & have bought their insurance on Policy bazaar
-          </p>
+      <section className="home-features-section">
+        <div className="features-side-bg left"><img src={left} alt="left-bg" /></div>
+        <div className="features-side-bg right"><img src={right} alt="left-bg" /></div>
+        
+        <div className="features-content">
+          <div className="features-title">
+            <p>
+              What makes <br/>
+              <b>Policybazaar</b> the<br/>
+              <b>best place</b> to buy<br/>
+              <b>insurance</b> in India?
+            </p>
+          </div>
+          
+          <div className="features-grid">
+            <div className="home-d1">
+              <div className="home-l" style={{ backgroundColor: "#0550C7" }}></div>
+              <img src={part} alt="party" />
+              <p>
+                <b style={{ color: "#0550C7" }}>Over 9 million</b>
+              </p>
+              <p className="home-d-text">
+                Customers trust us & have bought their insurance on Policy bazaar
+              </p>
+            </div>
+            
+            <div className="home-d2">
+              <div className="home-l" style={{ backgroundColor: "#3AC2F3" }}></div>
+              <img src={sear1} alt="party" />
+              <p>
+                <b style={{ color: "#3AC2F3" }}>50+ insurers</b>
+              </p>
+              <p className="home-d-text">
+                partnered with us so that you can compare easily & transparently
+              </p>
+            </div>
+            
+            <div className="home-d3">
+              <div className="home-l" style={{ backgroundColor: "#57CD1D" }}></div>
+              <img src={sear2} alt="party" />
+              <p>
+                <b style={{ color: "#57CD1D" }}>The Best Price</b>
+              </p>
+              <p className="home-d-text">
+                for all insurance plans available online
+              </p>
+            </div>
+            
+            <div className="home-d4">
+              <div className="home-l" style={{ backgroundColor: "#FFB62C" }}></div>
+              <img src={sear3} alt="party" />
+              <p>
+                <b style={{ color: "#FFB62C" }}>Claims</b>
+              </p>
+              <p className="home-d-text">
+                support built in with every policy for help, when you need it the most
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="home-d2">
-          <div className="home-l" style={{ backgroundColor: "#3AC2F3" }}></div>
-          <img src={sear1} alt="party" />
-          <p>
-            <b
-              style={{
-                color: "#3AC2F3",
-                position: "absolute",
-                marginBottom: "13px",
-              }}
-            >
-              50+ insurers
-            </b>
-          </p>
-          <p className="home-d-text">
-            partnered with us so that you can compare easily & transparentlyr
-          </p>
-        </div>
-        <div className="home-d3">
-          <div className="home-l" style={{ backgroundColor: "#57CD1D" }}></div>
-          <img src={sear2} alt="party" />
-          <p>
-            <b
-              style={{
-                color: "#57CD1D",
-                position: "absolute",
-                marginBottom: "13px",
-              }}
-            >
-              The Best Price
-            </b>
-          </p>
-          <p className="home-d-text">
-            for all insurance plans available online
-          </p>
-        </div>
-        <div className="home-d4">
-          <div className="home-l" style={{ backgroundColor: "#FFB62C" }}></div>
-          <img src={sear3} alt="party" />
-          <p>
-            <b
-              style={{
-                color: "#FFB62C",
-                position: "absolute",
-                marginBottom: "13px",
-              }}
-            >
-              Claims
-            </b>
-          </p>
-          <p className="home-d-text">
-            support built in with every policy for help, when you need it the
-            mostr
-          </p>
-        </div>
-      </div>
+      </section>
       <div
         style={{
           marginTop: "45%",
@@ -506,335 +469,29 @@ const HomePage = () => {
           </Grid>
         </Grid>
       </div>
-      <div
-        style={{
-          backgroundColor: "#F0F6FF",
-          width: "100%",
-          height: "543px",
-          marginTop: "5%",
-        }}
-      >
-        <img
-          style={{ float: "right", marginRight: "15%", marginTop: "5%" }}
-          src={bigp}
-          alt="phone"
-        />
-        <div
-          style={{
-            marginLeft: "13%",
-            position: "absolute",
-            fontFamily:
-              "Roboto,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif",
-          }}
-        >
-          <h1
-            style={{
-              fontWeight: "500",
-              fontFamily:
-                "Roboto,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif",
-              lineHeight: "114%",
-            }}
-          >
-            Get the Policybazaar app
-          </h1>
+      <section className="home-app-section">
+        <div className="app-text-content">
+          <h1>Get the Policybazaar app</h1>
           <div className="home-hl"></div>
-          <p style={{ color: "#253858", fontSize: "18px" }}>
+          <p className="app-subhead">
             Get control of all your insurance needs anywhere, anytime
           </p>
-
-          <p style={{ position: "absolute", top: "100%", left: "0%" }}>
-            {" "}
-            <img src={star} alt="star" /> Compare different insurance policies
-          </p>
-          <p style={{ position: "absolute", top: "130%", left: "0%" }}>
-            <img src={star} alt="star" /> Buy, store and share all your policies
-            online
-          </p>
-          <p style={{ position: "absolute", top: "160%", left: "0%" }}>
-            <img src={star} alt="star" /> Track your policy status on the go
-          </p>
-          <p style={{ position: "absolute", top: "190%", left: "0%" }}>
-            <img src={star} alt="star" /> Download your policy with a single tap
-          </p>
-          <p
-            style={{
-              position: "absolute",
-              top: "225%",
-              left: "0%",
-              color: "#253858",
-            }}
-          >
-            Download our app from
-          </p>
-          <div
-            style={{
-              position: "absolute",
-              top: "265%",
-              left: "0%",
-              display: "flex",
-              flexDirection: "row",
-            }}
-          >
-            <img src={Ap2} alt="app" style={{ marginRight: "7%" }} />
-
-            <img src={Ap1} alt="app" />
+          <ul>
+            <li><img src={star} alt="star" /> Compare different insurance policies</li>
+            <li><img src={star} alt="star" /> Buy, store and share all your policies online</li>
+            <li><img src={star} alt="star" /> Track your policy status on the go</li>
+            <li><img src={star} alt="star" /> Download your policy with a single tap</li>
+          </ul>
+          <p className="app-download-title">Download our app from</p>
+          <div className="app-store-links">
+            <img src={Ap2} alt="Google Play" />
+            <img src={Ap1} alt="App Store" />
           </div>
         </div>
-      </div>
-      <div className="home-ma-pat">
-        <p className="home-pat">Our Partners</p>
-        <p className="home-pat1">Leading insurers for your financial freedom</p>
-        <div
-          style={{
-            width: "70%",
-            marginLeft: "15%",
-            marginRight: "15%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            gap: "20px",
-          }}
-        >
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o1} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o2} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o3} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o4} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o5} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o6} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o7} alt="one" />
-          </div>
+        <div className="app-image-content">
+          <img src={bigp} alt="phone" />
         </div>
-
-        <div
-          style={{
-            width: "70%",
-            marginLeft: "15%",
-            marginTop: "2%",
-            marginRight: "15%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            gap: "20px",
-          }}
-        >
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o8} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px", height: "40px" }} src={o9} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o4} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o5} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o6} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o7} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o5} alt="one" />
-          </div>
-        </div>
-        <div
-          style={{
-            width: "70%",
-            marginLeft: "15%",
-            marginTop: "2%",
-            marginRight: "15%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            gap: "20px",
-          }}
-        >
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k1} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px", height: "40px" }} src={k0} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k3} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k2} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k8} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k3} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k5} alt="one" />
-          </div>
-        </div>
-        <div
-          style={{
-            width: "70%",
-            marginLeft: "15%",
-            marginTop: "2%",
-            marginRight: "15%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            gap: "20px",
-          }}
-        >
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k7} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px", height: "40px" }} src={k6} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k5} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k0} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k3} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k8} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k4} alt="one" />
-          </div>
-        </div>
-        <div
-          style={{
-            width: "70%",
-            marginLeft: "15%",
-            marginTop: "2%",
-            marginRight: "15%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            gap: "20px",
-          }}
-        >
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k2} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px", height: "40px" }} src={o0} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o4} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k1} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k9} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k8} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k4} alt="one" />
-          </div>
-        </div>
-        <div
-          style={{
-            width: "70%",
-            marginLeft: "15%",
-            marginTop: "2%",
-            marginRight: "15%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            gap: "20px",
-          }}
-        >
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o3} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px", height: "40px" }} src={k2} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k1} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o5} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o6} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px", height: "40px" }} src={o9} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={o0} alt="one" />
-          </div>
-        </div>
-        <div
-          style={{
-            width: "70%",
-            marginLeft: "15%",
-            marginTop: "2%",
-            marginRight: "15%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            gap: "20px",
-          }}
-        >
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k7} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px", height: "40px" }} src={k6} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k5} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k0} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k3} alt="one" />
-          </div>
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k8} alt="one" />
-          </div>
-
-          <div className="home-ob">
-            <img style={{ width: "90px" }} src={k4} alt="one" />
-          </div>
-        </div>
-      </div>
+      </section>
 
       <div className="home-inv">
         <div
