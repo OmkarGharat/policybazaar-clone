@@ -4,6 +4,10 @@
     justify-items: center;
     padding: 20px;
 }
+.leftside > img:first-child {
+    max-width: 90%;
+    margin-bottom: 20px;
+}
 .rating{
     width: 300px;
 }

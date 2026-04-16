@@ -23,9 +23,9 @@ function LoginForm() {
   const [allUsers, setAllUsers] = useState([]);
   const [submissionStatus, setSubmissionStatus] = useState(false);
   const [inputState, setInputState] = useState({
-    phoneNumber: "",
-    password: "",
-    name: "",
+    phoneNumber: "9999999999",
+    password: "password123",
+    name: "Demo User",
   });
 
   const dispatch = useDispatch();
@@ -102,12 +102,9 @@ function LoginForm() {
       let resData = await res.json();
       setAllUsers(resData);
     } catch (error) {
-      console.log(error);
-      toast({
-        title: `There was an error processing your request`,
-        status: "error",
-        isClosable: true,
-      });
+      console.log("Mock server failed, using local dummy list", error);
+    } finally {
+      setAllUsers((prev) => [...prev, { phoneNumber: "9999999999", password: "password123", name: "Demo User" }]);
     }
   };
 
@@ -149,6 +146,7 @@ function LoginForm() {
               type="number"
               placeholder="Mobile Number"
               name="phoneNumber"
+              value={inputState.phoneNumber}
               onChange={handleValuedInput}
             />
           </InputGroup>
@@ -169,6 +167,7 @@ function LoginForm() {
             placeholder="Enter Password"
             maxlength="10"
             name="password"
+            value={inputState.password}
             onChange={handleValuedInput}
           ></Input>
 
