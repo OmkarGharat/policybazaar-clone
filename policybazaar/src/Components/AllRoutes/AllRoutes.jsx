@@ -5,12 +5,30 @@ import Login from "../Login/LoginComp/Login";
 import Data from "../Navbar/Data";
 import { ChakraProvider } from "@chakra-ui/react";
 import HomePage from "../Home/Home";
+import { Product } from "../Product_page/Insurance_page/Product";
+import { Family } from "../Product_page/Family_page/Family";
+import { Family_right } from "../Product_page/Family_page/Family_right";
+import { Page2 } from "../Product_page/Page_2/Page2";
+import { Page3 } from "../Product_page/Page_3/Page3";
+import { Page4 } from "../Product_page/Page_4/Page4";
+import { Display_data } from "../Product_page/data/Display_data";
 
 const AllRoutes = () => {
   return (
     <div>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        
+        <Route path='/health' element={<Family />} >
+          <Route path='health' element={<Family_right />} />
+          <Route path="age" element={<Page2 />} />
+          <Route path='pincode' element={<Page3 />} />
+          <Route path='contact' element={<Page4 />} />
+          <Route path='*' element={<div>ERROR</div>} />
+        </Route>
+        <Route path='/plans' element={<Display_data />} />
+        <Route path='/term' element={<Product />} />
+
         <Route path="/lifeinsurance">
           <Route path="term-insurance">
             {Data.TermInsurance.map((ele) => {

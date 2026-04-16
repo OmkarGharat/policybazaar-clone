@@ -1,4 +1,5 @@
 import { styled } from "@mui/material/styles";
+import { useNavigate } from "react-router-dom";
 import Carousel from "../Carousel/Carousel";
 
 import Grid from "@mui/material/Grid";
@@ -63,6 +64,8 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="home-main">
@@ -106,7 +109,7 @@ const HomePage = () => {
               <p className="home-tm">Travel Insurance </p>
             </div>
 
-            <div className="home-tol">
+            <div className="home-tol" onClick={() => navigate("/health/health")} style={{cursor: "pointer"}}>
               <img src={Fam1} alt="one" />
               <p className="home-tm">Family Health Insurance</p>
             </div>
@@ -126,12 +129,12 @@ const HomePage = () => {
               <p className="home-tm">Investment Plans </p>
             </div>
 
-            <div className="home-tol">
+            <div className="home-tol" onClick={() => navigate("/health/health")} style={{cursor: "pointer"}}>
               <img src={umre} alt="one" />
               <p className="home-tm">Health Insurance </p>
             </div>
 
-            <div className="home-tol">
+            <div className="home-tol" onClick={() => navigate("/term")} style={{cursor: "pointer"}}>
               <img src={umre} alt="one" />
               <p className="home-tm">Term Life Insurance </p>
             </div>

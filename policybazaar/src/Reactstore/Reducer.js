@@ -1,4 +1,5 @@
 import React from 'react'
+import loginReducer from '../Components/Login/Redux/Login/loginReducer';
 import hdfc from "../Components/Product_page/data/HDFC_Life_logo.webp"
 import icici from "../Components/Product_page/data/ICICI_logo.webp"
 import max from "../Components/Product_page/data/MAX_logo.png"
@@ -110,10 +111,15 @@ Health_Insurance:[],
 Car_Insurance:[]
 }
 export const Reducer = (storedata=data,action) => {
+  let newState = {
+      ...storedata,
+      login: loginReducer(storedata.login, action)
+  };
+
   switch(action.type)
   {
-    case "user":return {...storedata,user_details:action.payload};
-    case "health":return {...storedata,user_health_insurance:action.payload};
-    default:return storedata
+    case "user":return {...newState, user_details:action.payload};
+    case "health":return {...newState, user_health_insurance:action.payload};
+    default:return newState;
   }
 }
