@@ -10,7 +10,8 @@ import Support from "./Support"
 import SideMenu from "./SideMenu"
 const Navbar=()=>
 {
-    let logindata=JSON.parse(sessionStorage.getItem("loggedInUserInfo"))
+    const defaultUser = { isAuth: false, name: "", phoneNumber: "" };
+    let logindata = JSON.parse(sessionStorage.getItem("loggedInUserInfo")) || defaultUser;
     let navigate=useNavigate()
     const[hoverstate,sethoverstate]=useState({IP:false,RP:false,Cl:false,Sup:false})
     const[display,setdisplay]=useState(false)
